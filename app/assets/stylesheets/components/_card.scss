@@ -1,0 +1,30 @@
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card {
+  display: flex;
+  flex-direction: column;
+  }
+  .card-info {
+    margin-left: 40px;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .phone {
+    display: flex;
+  }
+
+  .address {
+    display: flex;
+  }
+  .address a {
+    margin-right: 5px;
+  }
+  .address b {
+    margin-left: 10px;
+  }

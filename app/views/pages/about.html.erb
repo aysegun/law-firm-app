@@ -1,1 +1,23 @@
 <h1>About Page</h1>
+<div class="card-container">
+  <div class="card">
+    <div class="card-image">
+      <%= image_tag "https://source.unsplash.com/collection/349236/1000x1000", :alt => "murat erakin", width:220, heigt:330 %>
+    </div>
+    <div class="card-info">
+      <p>Av. Murat Erakın</p>
+    </div>
+  </div>
+
+  <div class="about-card">
+    <h3>Eğitim</h3>
+    <p>Istanbul Aydın Üniversitesi, 2016</p>
+    <h3>Baro Kaydı</h3>
+    <p>İstanbul Barosu, 2017</p>
+    <h3>Uzmanlık Alanları</h3>
+    <p>Ceza Hukuku <br>İcra İflas Hukuku <br> Ticaret Hukuku</p>
+    <h3>İletişim</h3>
+    <p><%= link_to "+905335180850" %></p>
+    <p><%= mail_to "av.muraterakin@gmail.com" %></p>
+  </div>
+</div>
