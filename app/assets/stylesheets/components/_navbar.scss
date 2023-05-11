@@ -1,20 +1,24 @@
-.navbar-nav {
+.navbar-law {
   display: flex;
   justify-content: space-between;
   background:rgb(52, 51, 51);
   list-style-type: none;
   box-sizing: border-box;
   height: 45px;
-  align-items: center;
+  //align-items: center;
   margin-top: 0%;
   padding: 0px 50px;
-}
-.nav-link {
-  color:  whitesmoke;
-  align-items: center;
-  text-decoration: none;
-}
-.navbar {
   position: sticky;
   top: 0;
+}
+.navbar-law .navbar-collapse{
+  flex-grow: 1;
+}
+
+
+.navbar-nav a {
+  color:  whitesmoke;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
