@@ -5,14 +5,24 @@
   .card {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
   }
   .card-info {
-    margin-left: 40px;
+    //margin-left: 40px;
   }
 
   .contact-container {
     display: flex;
     justify-content: space-between;
+  }
+
+  .card-image {
+    margin-bottom: 20px;
+    height: 90%;
+  }
+  .about-card {
+    margin-left: 10px;
   }
 
   .phone {
