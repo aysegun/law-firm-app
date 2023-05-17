@@ -1,11 +1,11 @@
 <div class ="banner" style="background-image: url(https://source.unsplash.com/collection/1783182/1000x1000)", height:300;>
   <div class ="container">
-      <h1>This is about page</h1>
+      <h1>Hakkımızda</h1>
   </div>
 </div>
 
 <div class="card-container">
-  <div class="card">
+  <div class="card border border-0">
     <div class="card-image">
       <%= image_tag "https://source.unsplash.com/collection/349236/1000x1000", :alt => "murat erakin", width:280, height:420 %>
     </div>
@@ -24,5 +24,7 @@
     <h3>İletişim</h3>
     <p><%= link_to "+905335180850" %></p>
     <p><%= mail_to "av.muraterakin@gmail.com" %></p>
+
+    <%= link_to "Ana Sayfa", root_path %>
   </div>
 </div>
