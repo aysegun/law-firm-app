@@ -16,8 +16,13 @@
 
 // Graphical variables
 
-  @import "config/fonts";
-  @import "config/bootstrap_variables";
+ @import "config/fonts";
+ @import "config/bootstrap_variables";
+
+// External libraries
+
+ @import "bootstrap/scss/bootstrap";
+ @import "font-awesome";
 
 // CSS partials
 
@@ -26,8 +31,3 @@
  @import "components/footer";
  @import "components/banner";
  @import "components/carousel";
-
-// External libraries
-
- @import "bootstrap/scss/bootstrap";
- @import "font-awesome";
