@@ -12,7 +12,12 @@
  *
  *= require_tree .
  *= require_self
- */
+*/
+
+// Graphical variables
+
+  @import "config/fonts";
+  @import "config/bootstrap_variables";
 
 // CSS partials
 
@@ -22,9 +27,7 @@
  @import "components/banner";
  @import "components/carousel";
 
- // External libraries
+// External libraries
 
  @import "bootstrap/scss/bootstrap";
  @import "font-awesome";
-
- // Graphical variables
