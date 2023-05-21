@@ -4,8 +4,8 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static values = {
     apiKey: String,
-    //latitude: Number,
-    //longitude: Number,
+    latitude: Number,
+    longitude: Number,
     markers: Array
   }
   connect() {
