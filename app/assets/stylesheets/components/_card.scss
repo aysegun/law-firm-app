@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 350px;
-    margin-left: 100px;
+    margin-left: 150px;
     margin-bottom: 50px;
   }
 
@@ -31,13 +31,20 @@
   }
   .about-card a {
     text-decoration: none;
+    color: grey;
+  }
+  .about-card a:hover {
+    color: black;
   }
 
   .phone {
     display: flex;
     margin-top: 5px;
   }
-
+  .phone a {
+    text-decoration: none;
+    color: black;
+  }
   .address {
     display: flex;
   }
