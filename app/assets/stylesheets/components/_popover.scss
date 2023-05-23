@@ -1,3 +1,29 @@
 .popover-section {
   margin-top: 300px;
 }
+.popover-section p{
+font-weight: bolder;
+color: grey;
+
+}
+.popover-section p:hover {
+  color: black;
+}
+
+.popover {
+  background: linear-gradient(135deg,#EEA47F,#00539C);
+}
+
+.practice {
+  margin-left: 50px;
+}
+
+#popover1 .arrow {
+  background: linear-gradient(135deg,#EEA47F,#00539C);
+  left: 90%;
+}
+.popover-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+}

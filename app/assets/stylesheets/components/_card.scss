@@ -17,7 +17,8 @@
   .contact-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 300px;
+    margin-top: 350px;
+    margin-left: 100px;
   }
 
   .card-image {
@@ -33,14 +34,14 @@
 
   .phone {
     display: flex;
+    margin-top: 5px;
   }
-
+  .phone  a {
+    margin-left: 15px;
+  }
   .address {
     display: flex;
   }
-  .address a {
-    margin-right: 5px;
-  }
-  .address b {
-    margin-left: 10px;
+  .address .a {
+    margin-right: 15px;
   }
