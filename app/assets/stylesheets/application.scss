@@ -37,7 +37,10 @@
   //position: relative;
   height: 100vh;
   padding-bottom: 45px;
-  margin: 0;
+  margin: 0 !important;
 
 
  }
+html {
+  padding-bottom: 45px !important;
+}
