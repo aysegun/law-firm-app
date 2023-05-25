@@ -34,13 +34,8 @@
  @import "components/popover";
 
  body {
-  //position: relative;
-  height: 100vh;
-  padding-bottom: 45px;
-  margin: 0 !important;
-
-
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 350px;
+  margin: 0;
  }
-html {
-  padding-bottom: 45px !important;
-}

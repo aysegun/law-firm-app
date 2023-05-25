@@ -1,13 +1,46 @@
 <div class="footer">
-  <div class="footer-copyright">
-    © 2023 - ALL RIGHTS RESERVED
-  </div>
-  <div class="footer-links">
-    <a href="https://github.com/aysegun"><i class="fa-brands fa-github" style="color: black"></i></a>
-    <%# <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a> %>
-  </div>
-  <div class="footer-terms">
-    Privacy - Terms & Conditions - Security
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        <ul class="footer-external">
+        <p>FAYDALI LİNKLER</p>
+          <li>
+            <a href="https://www.istanbulbarosu.org.tr/" target='_blank'>İstanbul Barosu</a>
+          </li>
+          <li>
+            <a href="https://www.barobirlik.org.tr/" target='_blank'>Türkiye Barolar Birliği</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <ul class="footer-info">
+        <p>DAHA FAZLA BİLGİ</p>
+          <li>
+            <%= link_to "Hakkımızda", about_path %>
+          </li>
+          <li>
+            <%= link_to "Ana Sayfa", root_path %>
+          </li>
+          <li>
+            <%= link_to "İletişim", contact_path %></li>
+          <li>
+            <%= link_to "Çalışma Alanlarımız", field_path %>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-legal">
+        <div class="footer-copyright">
+          Privacy - Terms & Conditions - Security
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/aysegun" target='_blank'><i class="fa-brands fa-github"></i></a>
+            <%# <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a> %>
+        </div>
+        <div class="footer-terms">
+          © 2023 | All Rights Reserved
+        </div>
+      </div>
+    </div>
   </div>
 </div>
