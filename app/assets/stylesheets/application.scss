@@ -19,6 +19,7 @@
  @import "config/fonts";
  @import "config/bootstrap_variables";
 
+
 // External libraries
 
  @import "bootstrap/scss/bootstrap";
@@ -32,6 +33,7 @@
  @import "components/banner";
  @import "components/carousel";
  @import "components/popover";
+ @import "components/map";
 
  body {
   position: relative;

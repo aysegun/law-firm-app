@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   def about; end
 
   def contact
-    result = Geocoder.search('16 Villa Gaudelet, Paris')
+    result = Geocoder.search('149 Carrer del Bruc, Barcelona')
 
     @latitude = result.first.latitude
     @longitude = result.first.longitude

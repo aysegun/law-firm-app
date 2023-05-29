@@ -11,7 +11,17 @@
 
 .data-processing {
   margin-top: 750px;
+  text-align: center;
 }
 .data-processing p {
   text-align: center;
+}
+.data-processing a {
+  text-decoration: none;
+  color: rgb(230, 13, 13);
+  font-weight: bolder;
+}
+
+.data-processing a:hover {
+  color: black;
 }

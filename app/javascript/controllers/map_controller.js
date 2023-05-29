@@ -10,10 +10,11 @@ export default class extends Controller {
   }
   connect() {
     mapboxgl.accessToken = this.apiKeyValue
-
+    console.log("hello")
     this.map = new mapboxgl.Map({
       container: this.element,
       style: "mapbox://styles/mapbox/streets-v10",
+      //center: [41.3987283, 2.16344],
       dragPan: true,
       cooperativeGestures: true,
     })
