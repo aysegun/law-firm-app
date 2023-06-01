@@ -1,0 +1,17 @@
+.error-404 {
+  background-image: url("404_error.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.error-button a{
+  text-decoration: none;
+  color: black;
+  margin-left: 50px;
+  font-weight: bolder;
+
+}
+.error-button a:hover {
+  color: red;
+
+}
