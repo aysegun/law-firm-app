@@ -42,8 +42,47 @@
 
 .error-text-500 {
   position: absolute;
-  right: 525px;
-  bottom: 400px;
+  right: 225px;
+  top: 400px;
   color: white;
   font-size: larger;
+}
+
+.error-422 {
+  position: relative;
+  text-align: center;
+}
+
+.error-text-422 {
+  position: absolute;
+  font-size: larger;
+  color:black;
+  top: 30px;
+  left: 590px;
+}
+.error-422 img {
+  height: 100%;
+  width: 100%;
+
+}
+
+.error-button-422 {
+  position: absolute;
+  left: 490px;
+  top: 65px;
+  text-align: left !important;
+  display: block;
+  margin-left: 180px;
+  border-color: black
+
+}
+
+.error-button-422 a{
+  text-decoration: none;
+  color: black;
+  //margin-left: 200px;
+  font-weight: bolder;
+  font-size: smaller;
+  padding: 10px 20px;
+
 }
