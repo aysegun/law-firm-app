@@ -13,8 +13,10 @@
   </head>
 
   <body>
+    <%# <% unless action_name == "errors" %>
     <%= render "shared/navbar" %>
     <%= yield %>
+    <%# <% unless action_name == "errors" %>
     <%= render "shared/footer" %>
   </body>
 </html>
