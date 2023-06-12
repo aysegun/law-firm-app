@@ -94,6 +94,7 @@ GEM
     geocoder (1.8.1)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    gmaps4rails (2.1.2)
     i18n (1.13.0)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
@@ -226,6 +227,7 @@ DEPENDENCIES
   debug
   font-awesome-sass (~> 6.1)
   geocoder
+  gmaps4rails
   jbuilder
   jsbundling-rails
   puma (~> 5.0)
