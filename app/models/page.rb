@@ -5,4 +5,7 @@ class Page < ApplicationRecord
   # def address
   #   [street, city, state, country].compact.join(',')
   # end
+  # def google_map(center)
+  #   "https://maps.googleapis.com/maps/api/staticmap?center=#{center}&size=500x500&zoom=17&key=#{Rails.application.credentials.MAPS_API_KEY}"
+  # end
 end
