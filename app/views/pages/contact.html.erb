@@ -20,10 +20,8 @@
       </div>
     </div>
   </div>
-  <p style ="margin-right: 150px">Aşağıdaki formu doldurarak bizimle iletişime geçebilirsiniz</p>
-</div>
-
-
-<div>
-  <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?markers=40.99421669158515,28.86918219416228&size=600x300&key=#{ENV["MAPS_API_KEY"]}" %>
+  <%# <p style ="margin-right: 150px">Aşağıdaki formu doldurarak bizimle iletişime geçebilirsiniz</p> %>
+  <div class="map">
+    <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?markers=40.99421669158515,28.86918219416228&size=750x300&zoom=15&key=#{ENV["MAPS_API_KEY"]}" %>
+  </div>
 </div>
