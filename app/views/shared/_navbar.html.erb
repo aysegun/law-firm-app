@@ -28,6 +28,8 @@
   const navEl = document.querySelector('.navbar');
 
   window.addEventListener('scroll', () => {
+    event.preventDefault()
+
     if (window.scrollY >= 60) {
       navEl.classList.add('navbar-scroll');
     } else if(window.scrollY < 60) {

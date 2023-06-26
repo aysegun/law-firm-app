@@ -4,7 +4,7 @@
   background:transparent;
   list-style-type: none;
   box-sizing: border-box;
-  height: 45px;
+  height: 55px;
   //align-items: center;
   margin-top: 0%;
   padding: 0px 50px;
@@ -31,6 +31,6 @@
   transition: all 0.5s;
 }
 .navbar-scroll {
-  background-color: black;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  background-color: rgba(2, 10, 32, 0.9);
+  box-shadow: 0 3px 10px rgba(2, 10, 32, 0.15);
 }
