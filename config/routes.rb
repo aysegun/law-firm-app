@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'field', to: 'pages#field'
+  get 'detail', to: 'pages#detail'
 
   get '404', to: 'errors#not_found'
   get '500', to: 'errors#internal_server'

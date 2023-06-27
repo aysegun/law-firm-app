@@ -17,5 +17,5 @@ class PagesController < ApplicationController
   end
 
   def field; end
-
+  def detail; end
 end
