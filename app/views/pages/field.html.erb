@@ -88,23 +88,33 @@
 </div> %>
 
 
-<div class="detail-section" style ="margin-top: 300px">
+<div class="detail-section">
   <p>Hizmetlerimiz hakkında daha fazla bilgi almak için tıklayınız.</p>
-  <ul>
-    <li>
-      <%= link_to "Ceza Hukuku", detail1_path %>
-    </li>
-    <li>
-      <%= link_to "Aile Hukuku", detail2_path %>
-    </li>
-    <li>
-      <%= link_to "İcra İflas Hukuku", detail3_path %>
-    </li>
-    <li>
-      <%= link_to "Yabancılar ve Vatandaşlık Hukuku", detail4_path %>
-    </li>
-    <li>
-      <%= link_to "İş Hukuku", detail5_path %>
-    </li>
-  </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <ul class="section-left">
+          <li class="area">
+            <%= link_to "Ceza Hukuku", detail1_path %>
+          </li>
+          <li class="area">
+            <%= link_to "Aile Hukuku", detail2_path %>
+          </li>
+          <li class="area">
+            <%= link_to "İcra İflas Hukuku", detail3_path %>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <ul class="section-right">
+          <li class="area">
+            <%= link_to "Yabancılar ve Vatandaşlık Hukuku", detail4_path %>
+          </li>
+          <li class="area">
+            <%= link_to "İş Hukuku", detail5_path %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
