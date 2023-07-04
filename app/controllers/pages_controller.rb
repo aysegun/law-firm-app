@@ -17,5 +17,10 @@ class PagesController < ApplicationController
   end
 
   def field; end
-  def detail; end
+
+  def detail1; end
+  def detail2; end
+  def detail3; end
+  def detail4; end
+  def detail5; end
 end
