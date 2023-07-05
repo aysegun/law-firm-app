@@ -16,3 +16,15 @@
 .banner-container {
   align-items: center;
 }
+
+.banner-container p {
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  bottom: 50%;
+  margin: auto;
+  color: white;
+  font-size: larger;
+  text-align: center;
+}
