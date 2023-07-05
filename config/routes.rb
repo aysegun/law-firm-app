@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'detail3', to: 'pages#detail3'
   get 'detail4', to: 'pages#detail4'
   get 'detail5', to: 'pages#detail5'
+  get 'detail6', to: 'pages#detail6'
 
   get '404', to: 'errors#not_found'
   get '500', to: 'errors#internal_server'
