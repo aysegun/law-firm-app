@@ -54,3 +54,15 @@
   .address {
     display: flex;
   }
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    margin-left: 0;
+  }
+  .about-card .container {
+    padding-bottom: 155px;
+  }
+}
