@@ -1,8 +1,8 @@
 
 .footer {
   position: absolute;
-  left: 0%;
-  bottom: 0%;
+  left: 0;
+  bottom: 0;
   width: 100%;
   background:rgba(2,10,32,0.9);
   //border-top: 1px solid black;
@@ -58,4 +58,25 @@
 
 .footer-terms {
   margin-right: 73px;
+}
+
+@media (max-width: 768px) {
+  .footer .row {
+    text-align: center;
+  }
+  .footer .row a {
+    line-height: 2;
+  }
+  .footer-info {
+    padding: 0;
+  }
+  .footer-terms {
+    margin-right: 0;
+  }
+  .footer-links a {
+    margin: 0;
+  }
+  .footer-external {
+    margin-top: 35px;
+  }
 }

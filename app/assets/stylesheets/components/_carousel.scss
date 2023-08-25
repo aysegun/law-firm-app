@@ -25,3 +25,10 @@
 .data-processing a:hover {
   color: black;
 }
+
+
+@media (max-width: 768px) {
+  .data-processing {
+    margin-bottom: 135px;
+  }
+}
