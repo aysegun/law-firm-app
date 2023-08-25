@@ -34,3 +34,15 @@
   background-color: rgba(2, 10, 32, 0.9);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
+
+@media (max-width: 768px) {
+  .navbar-nav a {
+    line-height: 2;
+  }
+  .navbar-nav li {
+    padding: 0;
+  }
+  .navbar-toggler {
+    margin: 20px 0;
+  }
+}
