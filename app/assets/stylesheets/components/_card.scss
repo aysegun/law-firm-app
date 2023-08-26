@@ -1,59 +1,57 @@
-  .card-container {
+// about page
+.card-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 300px;
 
-  }
-  .map {
-    margin-right: 150px;
-
-  }
-  .card {
+}
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 30px;
 
-  }
-  .card-info {
-    //margin-left: 40px;
-    padding-bottom: 45px;
-  }
+}
+.card-info {
+  padding-bottom: 45px;
+}
+.card-image {
+  margin-bottom: 20px;
+  height: 90%;
+}
+.about-card {
+  margin-left: 10px;
+}
+.about-card a {
+  text-decoration: none;
+  color: grey;
+}
+.about-card a:hover {
+  color: black;
+}
 
-  .contact-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 350px;
-    margin-left: 150px;
-    margin-bottom: 50px;
-  }
-
-  .card-image {
-    margin-bottom: 20px;
-    height: 90%;
-  }
-  .about-card {
-    margin-left: 10px;
-  }
-  .about-card a {
-    text-decoration: none;
-    color: grey;
-  }
-  .about-card a:hover {
-    color: black;
-  }
-
-  .phone {
-    display: flex;
-    margin-top: 5px;
-  }
-  .phone a {
-    text-decoration: none;
-    color: black;
-  }
-  .address {
-    display: flex;
-  }
+// contact page
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 350px;
+  margin-left: 150px;
+  margin-bottom: 50px;
+}
+.phone {
+  display: flex;
+  margin-top: 5px;
+}
+.phone a {
+  text-decoration: none;
+  color: black;
+}
+.address {
+  display: flex;
+}
+.map {
+  margin-right: 150px;
+}
 
 @media (max-width: 768px) {
   .card-container {
@@ -64,5 +62,38 @@
   }
   .about-card .container {
     padding-bottom: 155px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container .container {
+    grid-template-columns: 1fr;
+  }
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 10px;
+    margin-bottom: 250px;
+
+  }
+  .phone a {
+    margin-left: 10px;
+  }
+  .address .col-lg-9 {
+    margin-left: 21px;
+  }
+  .contact-info {
+    margin-left: 20px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+  }
+  .map img {
+    width: 100%;
+    height: 100%;
+  }
+  .map {
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
