@@ -37,3 +37,15 @@
     margin-top: 450px;
   }
 }
+
+// field details
+@media (max-width: 768px) {
+  .field-detail .col-lg-8 {
+    margin-bottom: 140px;
+    margin-right: 5px;
+  }
+  .field-detail .col-lg-4 {
+    margin-right: 5px;
+  }
+
+}
