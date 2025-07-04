@@ -35,7 +35,8 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 768px) {
+//small devices
+@media (max-width: 767px) {
   .navbar-nav a {
     line-height: 2;
   }
@@ -44,5 +45,19 @@
   }
   .navbar-toggler {
     margin: 20px 0;
+  }
+}
+
+//midsize devices
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar-nav .nav-item {
+    margin: 0 12px;
+  }
+  .navbar-nav a {
+    font-size: 1.1rem;
+    padding: 8px 0;
+  }
+  .navbar {
+    padding: 10px 20px;
   }
 }
