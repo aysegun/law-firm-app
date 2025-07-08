@@ -16,31 +16,30 @@
 
 // Graphical variables
 
- @import "config/fonts";
- @import "config/bootstrap_variables";
+@import "config/fonts";
+@import "config/bootstrap_variables";
 
 
 // External libraries
 
- @import "bootstrap/scss/bootstrap";
- @import "font-awesome";
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome";
 
 // CSS partials
 
- @import "components/card";
- @import "components/navbar";
- @import "components/footer";
- @import "components/banner";
- @import "components/carousel";
- @import "components/popover";
- @import "components/map";
- @import "components/error";
- @import "components/field";
- @import "components/responsive";
+@import "components/card";
+@import "components/navbar";
+@import "components/footer";
+@import "components/banner";
+@import "components/carousel";
+@import "components/popover";
+@import "components/map";
+@import "components/error";
+@import "components/field";
 
- body {
-  position: relative;
+body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  padding-bottom: 350px;
   margin: 0;
- }
+}

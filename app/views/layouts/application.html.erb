@@ -20,7 +20,9 @@
     <%# <% unless action_name = "errors" %>
     <%= render "shared/navbar" %>
     <%# <% end %>
-    <%= yield %>
+    <main>
+      <%= yield %>
+    </main>
     <%# <% unless action_name == "errors" %>
     <%= render "shared/footer" %>
     <%# <% end %>
