@@ -24,14 +24,19 @@
   </div>
 </div>
 
-<script>
-  const navEl = document.querySelector('.navbar');
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY >= 60) {
-      navEl.classList.add('navbar-scroll');
-    } else if(window.scrollY < 60) {
-      navEl.classList.remove('navbar-scroll');
-    }
+<script>
+  document.addEventListener("turbo:load", () => {
+    const navEl = document.querySelector('.navbar');
+
+    if (!navEl) return;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 60) {
+        navEl.classList.add('navbar-scroll');
+      } else {
+        navEl.classList.remove('navbar-scroll');
+      }
+    });
   });
 </script>
