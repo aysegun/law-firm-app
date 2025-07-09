@@ -1,8 +1,7 @@
-
-<div class="error-422">
-  <%= image_tag "422_error_img.jpg" %>
-  <div class="error-text-422"> The change you wanted was rejected</div>
-  <div class="error-button-422 btn btn-outline-primary" >
-    <%= link_to 'Ana Sayfa', root_path %>
+<div class="error-container">
+  <div class="error-box text-center shadow p-4">
+    <h1 class="error-code display-4">422</h1>
+    <p class="error-message">İsteğiniz reddedildi.</p>
+    <%= link_to 'Ana Sayfa', root_path, class: "btn btn-primary mt-3" %>
   </div>
 </div>

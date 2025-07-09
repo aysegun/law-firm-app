@@ -1,88 +1,28 @@
-.error-404 {
-  position: relative;
-  height: 100%;
-  text-align: center;
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
 }
 
-.error-button {
-  position: absolute;
-  left: 335px;
-  bottom: 65px;
-  text-align: left !important;
-  display: block;
-  margin-left: 180px;
-  border-color: black;
+.error-box {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.error-button a{
-  text-decoration: none;
-  color: black;
-  //margin-left: 200px;
-  font-weight: bolder;
-  font-size: smaller;
-  padding: 10px 20px;
-
+.error-code {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #0d6efd; // Bootstrap primary
 }
 
-.error-button a:hover {
- color:white;
-}
-
-.error-500  {
-  position: relative;
-  text-align: center;
-  //padding-bottom: 0;
-}
-
-.error-500 img {
-  background-size:contain;
-  width: 100%;
-  bottom: 0;
-}
-
-.error-text-500 {
-  position: absolute;
-  right: 225px;
-  top: 400px;
-  color: white;
-  font-size: larger;
-}
-
-.error-422 {
-  position: relative;
-  text-align: center;
-}
-
-.error-text-422 {
-  position: absolute;
-  font-size: larger;
-  color:black;
-  top: 30px;
-  left: 590px;
-}
-.error-422 img {
-  height: 100%;
-  width: 100%;
-
-}
-
-.error-button-422 {
-  position: absolute;
-  left: 490px;
-  top: 65px;
-  text-align: left !important;
-  display: block;
-  margin-left: 180px;
-  border-color: black
-
-}
-
-.error-button-422 a{
-  text-decoration: none;
-  color: black;
-  //margin-left: 200px;
-  font-weight: bolder;
-  font-size: smaller;
-  padding: 10px 20px;
-
+.error-message {
+  font-size: 1.25rem;
+  color: #333;
 }

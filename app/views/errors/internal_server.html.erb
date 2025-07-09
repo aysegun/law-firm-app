@@ -1,5 +1,7 @@
-
-  <div class = "error-500">
-    <%= image_tag "500_error.jpg"  %>
-    <div class="error-text-500">Oops, something went wrong...</div>
+<div class="error-container">
+  <div class="error-box text-center shadow p-4">
+    <h1 class="error-code display-4">500</h1>
+    <p class="error-message">Sunucuda bir hata oluştu.</p>
+    <%= link_to 'Ana Sayfa', root_path, class: "btn btn-primary mt-3" %>
   </div>
+</div>

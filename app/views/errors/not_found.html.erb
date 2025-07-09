@@ -1,7 +1,7 @@
-<div class="error-404">
-  <%= image_tag '404_error_2.png', alt:'not_found', height:400 %>
-
-  <div class="error-button btn btn-outline-primary" >
-    <%= link_to 'Ana Sayfa', root_path %>
+<div class="error-container">
+  <div class="error-box text-center shadow p-4">
+    <h1 class="error-code display-4">404</h1>
+    <p class="error-message">Sayfa bulunamadı.</p>
+    <%= link_to 'Ana Sayfa', root_path, class: "btn btn-primary mt-3" %>
   </div>
 </div>

@@ -17,15 +17,15 @@
   </head>
 
   <body>
-    <%# <% unless action_name = "errors" %>
-    <%= render "shared/navbar" %>
-    <%# <% end %>
+    <% unless controller_name == "errors" %>
+      <%= render "shared/navbar" %>
+    <% end %>
     <main>
       <%= yield %>
     </main>
-    <%# <% unless action_name == "errors" %>
-    <%= render "shared/footer" %>
-    <%# <% end %>
+    <% unless controller_name == "errors" %>
+      <%= render "shared/footer" %>
+    <% end %>
     <script>
       console.log("%cHey there, curious developer! 👋\nThis awesome website was crafted by Ayse Gungormez – https://github.com/aysegun", "color: #555555; font-weight: bold; font-size: 12px;");
     </script>
