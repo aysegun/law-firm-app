@@ -3,15 +3,18 @@
     <div class="row">
       <div class="col-lg-9 col-md-6">
         <ul class="footer-external">
-        <p>FAYDALI LİNKLER</p>
+        <p>DAHA FAZLA BİLGİ</p>
           <li>
-            <a href="https://www.istanbulbarosu.org.tr/" target='_blank'>İstanbul Barosu</a>
+            <%= link_to "Hakkımızda", about_path %>
           </li>
           <li>
-            <a href="https://www.barobirlik.org.tr/" target='_blank'>Türkiye Barolar Birliği</a>
+            <%= link_to "Ana Sayfa", root_path %>
           </li>
           <li>
-            <a href="https://karararama.yargitay.gov.tr/" target='_blank'>Yargıtay Karar Arama</a>
+            <%= link_to "İletişim", contact_path %></li>
+          </li>
+          <li>
+           <%= link_to "Çalışma Alanlarımız", field_path %>
           </li>
         </ul>
       </div>
@@ -26,9 +29,9 @@
           </li>
           <li>
             <%= link_to "İletişim", contact_path %></li>
-          <li>
-            <%= link_to "Çalışma Alanlarımız", field_path %>
           </li>
+          <li>
+           <%= link_to "Çalışma Alanlarımız", field_path %>
         </ul>
       </div>
       <div class="footer-legal">
