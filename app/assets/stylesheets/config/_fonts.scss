@@ -2,11 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap&subset=latin-ext');
 
 // Fonts for body and headers
 
-$body-font: "Alice", "Helvetica", sans-serif;
-$headers-font: "Playfair Display","Helvetica", serif;
+$body-font: "Alice", "Lora", sans-serif;
+$headers-font: "Playfair Display","Lora", serif;
 
 
 // To use a font file (.woff) uncomment following lines
