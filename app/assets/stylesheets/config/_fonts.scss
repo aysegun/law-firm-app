@@ -12,14 +12,32 @@
     U+015F-024F,  /* Latins after Ş */
     U+1E00-1EFF;  /* Latin Extended Additional */
 }
+@font-face {
+  font-family: "CustomAlice";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: font-url('alice-v20-latin-700.woff2') format('woff2');
+  unicode-range: U+0000-015D, U+015F-024F, U+1E00-1EFF;
+}
 
-// Playfair Display ONLY for Ş (U+015E)
+// Lora ONLY for Ş (U+015E)
 @font-face {
   font-family: "AliceFallback";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: font-url('playfair-display-v39-latin-regular.woff2') format('woff2');
+  src: font-url('lora-v36-latin-regular.woff2') format('woff2');
+  unicode-range: U+015E;
+}
+
+// Bold Ş (U+015E)
+@font-face {
+  font-family: "AliceFallback";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: font-url('lora-v36-latin-700.woff2') format('woff2');
   unicode-range: U+015E;
 }
 
@@ -33,12 +51,19 @@
   unicode-range: U+0000-024F, U+1E00-1EFF;
 }
 
-
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: font-url('playfair-display-v39-latin-700.woff2') format('woff2');
+  unicode-range: U+0000-024F, U+1E00-1EFF;
+}
 // ============================
 // Sass Variable Setup
 // ============================
 
-$body-font: "CustomAlice", "Playfair Display", serif;
+$body-font: "CustomAlice", "AliceFallback", serif;
 $headers-font: "Playfair Display", "Lora", serif;
 
 // Helper class if needed
