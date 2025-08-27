@@ -1,26 +1,47 @@
-// Import Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+// Alice for everything EXCEPT Ş
+@font-face {
+  font-family: "CustomAlice";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: font-url('alice-v20-latin-regular.woff2') format('woff2');
+  unicode-range:
+    U+0000-015D,  /* Latin up to Ŝ */
+    U+015F-024F,  /* Latins after Ş */
+    U+1E00-1EFF;  /* Latin Extended Additional */
+}
+
+// Playfair Display ONLY for Ş (U+015E)
+@font-face {
+  font-family: "AliceFallback";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: font-url('playfair-display-v39-latin-regular.woff2') format('woff2');
+  unicode-range: U+015E;
+}
+
+// Full Playfair Display for headers
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: font-url('playfair-display-v39-latin-regular.woff2') format('woff2');
+  unicode-range: U+0000-024F, U+1E00-1EFF;
+}
 
 
-// Fonts for body and headers
+// ============================
+// Sass Variable Setup
+// ============================
 
-$body-font: "Alice", serif;
+$body-font: "CustomAlice", "Playfair Display", serif;
 $headers-font: "Playfair Display", "Lora", serif;
 
-
-// To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+// Helper class if needed
+.turkish-fallback {
+  font-family: "AliceFallback", serif;
+}
