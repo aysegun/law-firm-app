@@ -51,9 +51,26 @@
 .address {
   display: flex;
 }
+
 .map {
-  margin-right: 150px;
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  width: 100%;
+  padding: 0 40px;   /* side spacing */
+  box-sizing: border-box;
 }
+
+.map-iframe {
+  width: 100%;
+  max-width: 1800px;  /* keeps from stretching too wide on ultrawide monitors */
+  height: 450px;      /* you can adjust this for desktop */
+  border: 0;
+  border-radius: 8px; /* optional, rounded corners */
+}
+
+
+//small devices
 
 @media (max-width: 768px) {
   .card-container {

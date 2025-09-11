@@ -60,5 +60,11 @@
   </div>
 </div>
 <div class="map">
-  <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?markers=41.0677457,28.9860533&size=1200x400&zoom=15&key=#{ENV["MAPS_API_KEY"]}" %>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d8507.837090487476!2d28.979266270723876!3d41.069546764203075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDA0JzAzLjkiTiAyOMKwNTknMDkuOCJF!5e0!3m2!1str!2ses!4v1757600604627!5m2!1str!2ses"
+    class="map-iframe"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
 </div>
