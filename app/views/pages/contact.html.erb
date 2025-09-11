@@ -24,36 +24,38 @@
   <!-- Contact Form Card -->
   <div class="contact-card">
     <div class="container">
-      <h3>İletişim Formu</h3>
-      <%= form_with url: contact_path, method: :post, local: true do |f| %>
-        <div class="row">
-          <div class="col-lg-6">
-            <%= f.label :name, "Ad-Soyad *" %>
-            <%= f.text_field :name, class: "form-control", required: true %>
+      <div class="contact-form-info">
+        <h3>İletişim Formu</h3>
+        <%= form_with url: contact_path, method: :post, local: true do |f| %>
+          <div class="row">
+            <div class="col-lg-6">
+              <%= f.label :name, "Ad-Soyad *" %>
+              <%= f.text_field :name, class: "form-control", required: true %>
+            </div>
+            <div class="col-lg-6">
+              <%= f.label :phone, "Telefon *" %>
+              <%= f.telephone_field :phone, class: "form-control", required: true %>
+            </div>
           </div>
-          <div class="col-lg-6">
-            <%= f.label :phone, "Telefon *" %>
-            <%= f.telephone_field :phone, class: "form-control", required: true %>
+          <div class="row mt-3">
+            <div class="col-lg-12">
+              <%= f.label :email, "Email address *" %>
+              <%= f.email_field :email, class: "form-control", required: true %>
+            </div>
           </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-lg-12">
-            <%= f.label :email, "Email address *" %>
-            <%= f.email_field :email, class: "form-control", required: true %>
+          <div class="row mt-3">
+            <div class="col-lg-12">
+              <%= f.label :message, "Mesajınız *" %>
+              <%= f.text_area :message, rows: 5, class: "form-control", required: true %>
+            </div>
           </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-lg-12">
-            <%= f.label :message, "Mesajınız *" %>
-            <%= f.text_area :message, rows: 5, class: "form-control", required: true %>
+          <div class="row mt-3">
+            <div class="col-lg-12">
+              <%= f.submit "Send", class: "btn btn-dark w-100" %>
+            </div>
           </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-lg-12">
-            <%= f.submit "Send", class: "btn btn-dark w-100" %>
-          </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

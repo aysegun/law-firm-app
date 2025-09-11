@@ -33,10 +33,12 @@
 // contact page
 .contact-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 350px;
-  margin-left: 150px;
+  margin-right: 100px;
+  margin-left: 100px;
   margin-bottom: 50px;
+
 }
 .phone {
   display: flex;
@@ -87,14 +89,21 @@
     margin-bottom: 60px;
     margin-top: 10px;
   }
+  .contact-form-info {
+    margin-left: 2em;
+
+  }
+
+  .contact-form-info h3 {
+    margin-bottom: 2em;
+  }
+
   .map img {
     width: 100%;
     height: 100%;
   }
   .map {
-    margin-right: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 10px;
   }
 }
 
@@ -123,11 +132,10 @@
     flex-direction: column;
   }
   .contact-info {
-    margin-left: 10px;
     margin-bottom: 40px;
   }
   .map {
-    margin: 20px 0;
+    margin: 20px 10px;
   }
   .map img {
     width: 100%;
