@@ -28,6 +28,7 @@
             padding: 15px 30px;
             border-radius: 5px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            transition: transform 0.5s ease, opacity 0.5s ease;
             ">
           <%= message %>
         </div>
@@ -45,10 +46,10 @@
         const flashes = document.querySelectorAll(".flash-message");
         flashes.forEach(flash => {
           setTimeout(() => {
-            flash.style.transition = "opacity 0.5s ease";
             flash.style.opacity = "0";
-            setTimeout(() => flash.remove(), 500); // remove after fade
-          }, 3000); // 5 seconds
+            flash.style.transform = "translateX(-50%) translateY(-20px)"; // slide up
+            setTimeout(() => flash.remove(), 500); // remove after animation
+          }, 3000); // 3 seconds
         });
       });
     </script>
