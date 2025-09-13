@@ -26,7 +26,7 @@
     <div class="container">
       <div class="contact-form-info">
         <h3>İletişim Formu</h3>
-        <%= form_with url: contact_path, method: :post, local: true do |f| %>
+        <%= form_with url: contact_path, method: :post, scope: :contact, local: true, data: { turbo: false } do |f| %>
           <div class="row">
             <div class="col-lg-6">
               <%= f.label :name, "Ad-Soyad *" %>

@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   # root "articles#index"
   root to: 'pages#home'
   get 'about', to: 'pages#about'
-  get 'contact', to: 'pages#contact'
+  get 'contact', to: 'pages#contact', as: :contact
+  post 'contact', to: 'contacts#create'
   get 'field', to: 'pages#field'
   get 'detail1', to: 'pages#detail1'
   get 'detail2', to: 'pages#detail2'
