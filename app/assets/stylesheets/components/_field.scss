@@ -2,14 +2,15 @@
   list-style-type: none;
   margin-top: 20px;
 
-}
-.area a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-.area a:hover {
-  color: rgb(230, 13, 13);
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+    &:hover {
+      color: rgb(230, 13, 13);
+    }
+  }
 }
 
 .detail-section {
