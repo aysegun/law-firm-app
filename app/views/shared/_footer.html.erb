@@ -11,38 +11,25 @@
             <%= link_to "Ana Sayfa", root_path %>
           </li>
           <li>
-            <%= link_to "İletişim", contact_path %></li>
-          </li>
-          <li>
            <%= link_to "Çalışma Alanlarımız", field_path %>
           </li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-6">
         <ul class="footer-info">
-        <p>DAHA FAZLA BİLGİ</p>
-          <li>
-            <%= link_to "Hakkımızda", about_path %>
+        <p>Bizimle iletişime geçin</p>
+          <li class="button">
+            <%= button_to contact_path, method: :get, class: "btn btn-outline-info" do %>
+              İletişim <i class="fa-solid fa-arrow-right"></i>
+            <% end %>
           </li>
-          <li>
-            <%= link_to "Ana Sayfa", root_path %>
-          </li>
-          <li>
-            <%= link_to "İletişim", contact_path %></li>
-          </li>
-          <li>
-           <%= link_to "Çalışma Alanlarımız", field_path %>
         </ul>
       </div>
       <div class="footer-legal">
-        <%# <div class="footer-copyright">
-          Privacy - Terms & Conditions - Security
-        </div> %>
         <div class="footer-terms">
           © 2025 | All Rights Reserved
         </div>
         <div class="footer-links">
-          <%#<p><em>Website developed by Ayse Gungormez</em></p>%>
           <a href="https://www.linkedin.com/in/muraterakin/" target='_blank'><i class="fa-brands fa-linkedin"></i></a>
         </div>
       </div>

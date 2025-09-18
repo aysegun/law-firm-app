@@ -65,7 +65,8 @@ Rails.application.configure do
   config.assets.quiet = true
 
   # Allow ngrok public URL
-  config.hosts << "0ded51a76c4f.ngrok-free.app"
+  config.hosts << "fe84907ceee2.ngrok-free.app"
+
 
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true

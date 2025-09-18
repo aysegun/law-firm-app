@@ -52,6 +52,18 @@
   margin-right: 73px;
   font-size: 12px ;
 }
+.footer-info button {
+  background-color: white;
+  color: rgba(2,10,32,0.9);
+  border: none;
+}
+.footer-info button:hover {
+  background-color: white;
+
+  color: rgba(144,144,144, 0.9);
+  border: 1px solid rgba(144, 144,144, 0.9);
+  opacity: 0,5;
+}
 
 @media (max-width: 768px) {
   .footer .row {
