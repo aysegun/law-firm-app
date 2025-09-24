@@ -93,16 +93,16 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: "smtp.zoho.com",
+    address: "smtp.zoho.eu",
     port: 465,                       # SSL port
     domain: "muraterakin.av.tr",
     user_name: ENV["ZOHO_EMAIL"],    # set this in your production environment
     password: ENV["ZOHO_PASSWORD"],  # set this as Zoho App Password
-    authentication: :login,
+    authentication: :plain,
     ssl: true,
     enable_starttls_auto: true
   }
 
-  config.action_mailer.default_url_options = { host: "www.muraterakin.av.tr" }
+  config.action_mailer.default_url_options = { host: "www.muraterakin.av.tr", protocol: "https" }
   config.action_mailer.raise_delivery_errors = true
 end
